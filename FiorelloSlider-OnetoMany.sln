@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiorelloSlider-OnetoMany", "FiorelloSlider-OnetoMany\FiorelloSlider-OnetoMany.csproj", "{631F7ECA-7872-4C5A-BFCF-1A9CD8C2760E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{631F7ECA-7872-4C5A-BFCF-1A9CD8C2760E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{631F7ECA-7872-4C5A-BFCF-1A9CD8C2760E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{631F7ECA-7872-4C5A-BFCF-1A9CD8C2760E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{631F7ECA-7872-4C5A-BFCF-1A9CD8C2760E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFE3E412-3373-4002-83FD-AF13920B42FD}
+	EndGlobalSection
+EndGlobal

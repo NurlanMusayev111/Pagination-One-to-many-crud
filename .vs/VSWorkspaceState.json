@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\FiorelloSlider-OnetoMany",
+    "\\FiorelloSlider-OnetoMany\\Areas",
+    "\\FiorelloSlider-OnetoMany\\Areas\\Admin",
+    "\\FiorelloSlider-OnetoMany\\Areas\\Admin\\Controllers",
+    "\\FiorelloSlider-OnetoMany\\Areas\\Admin\\Views",
+    "\\FiorelloSlider-OnetoMany\\Areas\\Admin\\Views\\Category"
+  ],
+  "SelectedNode": "\\FiorelloSlider-OnetoMany.sln",
+  "PreviewInSolutionExplorer": false
+}

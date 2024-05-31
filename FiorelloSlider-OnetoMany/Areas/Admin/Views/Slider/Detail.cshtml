@@ -1,0 +1,19 @@
+﻿@model SliderDetailVM
+
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+
+<div class="container mt-5">
+    <form class="forms-sample" method="post" asp-action="Create">
+        <div class="form-group">
+            <label style="display:block">Slider</label>
+            <img src="~/img/@Model.Image" style="height:300px;width:600px" alt="Alternate Text" />
+            <span class="text-danger" asp-validation-for="Image"></span>
+        </div>
+        <a asp-action="Index" class="btn btn-primary text-white">back</a>
+    </form>
+</div>
+

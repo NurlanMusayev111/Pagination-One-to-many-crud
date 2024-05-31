@@ -1,0 +1,58 @@
+﻿@model List<ProductVM>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container mt-5 mx-5">
+    <div class="create-category">
+        <a asp-area="Admin" asp-controller="Product" asp-action="Create" class="btn btn-success text-white" style="font-size:30px;width120px">+</a>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th> Product Image </th>
+                <th> Product name </th>
+                <th> Description </th>
+                <th> Price </th>
+                <th> Category </th>
+                <th> Operations </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="py-1">
+                        <img src="~/img/@item.Image" />
+                    </td>
+
+                    <td class="py-1">
+                        @item.Name
+                    </td>
+
+                    <td class="py-1">
+                        @item.Description
+                    </td>
+
+                    <td class="py-1">
+                        @item.Price
+                    </td>
+
+                    <td class="py-1">
+                        @item.Category
+                    </td>
+
+                    <td>
+                        <a asp-action="Detail" asp-route-id="@item.Id" class="btn btn-info text-white">Info</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning text-white">edit</a>
+                        <form class="d-inline" asp-action="Delete" method="post" asp-route-id="@item.Id">
+                            <button type="submit" class="btn btn-danger text-white">delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+

@@ -1,0 +1,70 @@
+﻿@model Product
+
+<!-- content -->
+<section class="py-5">
+    <div class="container">
+        <div class="row gx-5">
+            <aside class="col-lg-6">
+                <div class="border rounded-4 mb-3 d-flex justify-content-center">
+                    
+                </div>
+                <div class="d-flex justify-content-center mb-3">
+                    @foreach (var item in Model.ProductImages)
+                    {
+                        <a data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image" href="https://mdbcdn.b-cdn.net/img/bootstrap-ecommerce/items/detail1/big1.webp" class="item-thumb">
+                            <img style="height:240px;width:240px" class="rounded-2" src="~/img/@item.Name" />
+                        </a>
+                    }
+
+                </div>
+                <!-- thumbs-wrap.// -->
+                <!-- gallery-wrap .end// -->
+            </aside>
+            <main class="col-lg-6">
+                <div class="ps-lg-3">
+                    <h4 class="title text-dark">
+                        Quality Men's Hoodie for Winter, Men's Fashion <br />
+                        Casual Hoodie
+                    </h4>
+                    <div class="d-flex flex-row my-3">
+                        <div class="text-warning mb-1 me-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="ms-1">
+                                4.5
+                            </span>
+                        </div>
+                        <span class="text-muted"><i class="fas fa-shopping-basket fa-sm mx-1"></i>154 orders</span>
+                        <span class="text-success ms-2">In stock</span>
+                    </div>
+
+                    <div class="mb-3">
+                        <span class="h5">$75.00</span>
+                        <span class="text-muted">/per box</span>
+                    </div>
+
+                    <p>
+                        @Model.Description
+                    </p>
+
+                    <div class="row">
+                        <dt class="col-3">Category</dt>
+                        <dd class="col-9">@Model.Category.Name</dd>
+
+                        <dt class="col-3">Price</dt>
+                        <dd class="col-9">@Model.Price</dd>
+
+                    </div>
+
+                    <hr />
+
+                </div>
+            </main>
+        </div>
+    </div>
+</section>
+<!-- content -->
+

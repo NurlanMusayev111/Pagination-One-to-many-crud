@@ -1,0 +1,17 @@
+﻿@model CategoryCreateVM
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container mt-5">
+    <form class="forms-sample" method="post" asp-action="Create">
+        <div class="form-group">
+            <label>Category</label>
+            <img src="~/img/@Model.Name" alt="Alternate Text" />
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+        <button class="btn btn-primary mr-2">Submit</button>
+        <a asp-action="Index" class="btn btn-primary text-white">back</a>
+    </form>
+</div>
+

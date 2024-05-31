@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\FiorelloSlider-OnetoMany.props" />
+</Project>
